@@ -1,6 +1,6 @@
 {
   "name": "pointbreak",
-  "aliases": [
+  "alias": [
     "pointbreak.now.sh"
   ],
   "type": "npm",
