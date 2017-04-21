@@ -2,11 +2,11 @@
   "name": "pointbreak-as-a-service",
   "version": "1.0.0",
   "description": "Pointbreak. As a service.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "micro"
   },
-  "keywords": [],
+  "keywords": ["Pointbreak", "Keanu", "Bodhi"],
   "author": "tomkp <tom@tomkp.com> (http://tomkp.com)",
   "license": "MIT",
   "dependencies": {
