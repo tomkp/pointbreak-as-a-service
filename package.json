@@ -4,12 +4,18 @@
   "description": "Pointbreak. As a service.",
   "main": "src/index.js",
   "scripts": {
-    "start": "micro"
+    "start": "micro",
+    "prettier": "prettier --single-quote --trailing-comma es5 --write './src/**/*.js'"
   },
-  "keywords": ["Pointbreak", "Keanu", "Bodhi"],
+  "keywords": [
+    "Pointbreak",
+    "Keanu",
+    "Bodhi"
+  ],
   "author": "tomkp <tom@tomkp.com> (http://tomkp.com)",
   "license": "MIT",
   "dependencies": {
-    "micro": "^7.3.2"
+    "micro": "^7.3.2",
+    "prettier": "^1.2.2"
   }
 }
