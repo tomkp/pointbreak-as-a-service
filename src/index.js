@@ -1,7 +1,5 @@
 const pointbreak = require('./pointbreak.js');
 
-console.log(``, pointbreak.length);
-
 module.exports = (req, res) => {
   console.log(``, req.headers.host);
   if (req.url && req.url.length > 1) {
@@ -12,6 +10,6 @@ module.exports = (req, res) => {
       res.end(pointbreak[index]);
     }
   } else {
-    res.end(`Point Break as a service. https://${req.headers.host}/0`);
+    res.end(`<html>Point Break as a service. <p><a href="https://${req.headers.host}/0">https://${req.headers.host}/0</a></html>`);
   }
 };
