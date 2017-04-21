@@ -6,6 +6,6 @@
   "type": "npm",
   "env": {
     "NODE_ENV": "production",
-    "LW_SUBDOMAIN": "pointbreak.now.sh",
+    "LW_SUBDOMAIN": "pointbreak.now.sh"
   }
 }
