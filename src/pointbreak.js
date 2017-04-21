@@ -1,4 +1,4 @@
-[
+module.exports = [
   "(cocks gun)",
   "100%, Utah!",
   "Good job!",
