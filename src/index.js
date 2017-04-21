@@ -12,6 +12,6 @@ module.exports = (req, res) => {
       res.end(pointbreak[index]);
     }
   } else {
-    res.end(`Point Break as a service. ${req.headers.host}/0`);
+    res.end(`Point Break as a service. https://${req.headers.host}/0`);
   }
 };
