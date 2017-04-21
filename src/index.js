@@ -1,1 +1,1 @@
-module.exports = () => 'Pointbreak as a service'
+module.exports = () => 'Pointbreak as a service';
