@@ -1,0 +1,11 @@
+{
+  "name": "pointbreak",
+  "aliases": [
+    "pointbreak.now.sh"
+  ],
+  "type": "npm",
+  "env": {
+    "NODE_ENV": "production",
+    "LW_SUBDOMAIN": "pointbreak.now.sh",
+  }
+}
