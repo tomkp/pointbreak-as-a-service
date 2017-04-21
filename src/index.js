@@ -1,9 +1,6 @@
-
 const pointbreak = require('./pointbreak.js');
 
 console.log(``, pointbreak.length);
-
-
 
 module.exports = (req, res) => {
   console.log(``, req.headers.host);
@@ -17,5 +14,4 @@ module.exports = (req, res) => {
   } else {
     res.end(`Point Break as a service. ${req.headers.host}/0`);
   }
-
 };
