@@ -12,8 +12,7 @@ module.exports = cors((req, res) => {
       res.end(pointbreak[index]);
     }
   } else {
-    res.end(
-      `<html>Point Break as a service. <p><a href="https://${req.headers.host}/0">https://${req.headers.host}/0</a></html>`
-    );
+    const host = req.headers.host;
+    res.end(`<html>Point Break as a service. <p><a href="https://${host}/0">https://${host}/0</a></html>`);
   }
 });
