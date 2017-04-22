@@ -1,7 +1,8 @@
 const pointbreak = require('./pointbreak.js');
 const { send } = require('micro');
+const cors = require('micro-cors')();
 
-module.exports = async (req, res) => {
+module.exports = cors((req, res) => {
   if (req.url && req.url.length > 1) {
     const index = req.url.substring(1);
     const max = pointbreak.length - 1;
@@ -15,4 +16,4 @@ module.exports = async (req, res) => {
       `<html>Point Break as a service. <p><a href="https://${req.headers.host}/0">https://${req.headers.host}/0</a></html>`
     );
   }
-};
+});
