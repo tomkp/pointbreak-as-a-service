@@ -3,8 +3,9 @@ const { send } = require('micro');
 const cors = require('micro-cors')();
 
 module.exports = cors((req, res) => {
-  if (req.url && req.url.length > 1) {
-    const index = req.url.substring(1);
+  const url = req.url;
+  if (url && url.length > 1) {
+    const index = url.substring(1);
     const max = pointbreak.length - 1;
     if (index > max) {
       send(res, 400, `Max value is ${max}`);
