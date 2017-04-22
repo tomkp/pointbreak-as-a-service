@@ -1,11 +1,12 @@
 const pointbreak = require('./pointbreak.js');
+const {send} = require('micro')
 
-module.exports = (req, res) => {
-  console.log(``, req.headers.host);
+module.exports = async (req, res) => {
   if (req.url && req.url.length > 1) {
     const index = req.url.substring(1);
-    if (index > pointbreak.length - 1) {
-      res.end('The End');
+    const max = pointbreak.length - 1;
+    if (index > max) {
+      send(res, 400, `Max value is ${max}`)
     } else {
       res.end(pointbreak[index]);
     }
