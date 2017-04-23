@@ -8,7 +8,7 @@ module.exports = cors((req, res) => {
     const index = url.substring(1);
     const max = pointbreak.length - 1;
     if (index > max) {
-      send(res, 400, `Max value is ${max}`);
+      send(res, 404, `Max value is ${max}`);
     } else {
       res.end(pointbreak[index]);
     }
